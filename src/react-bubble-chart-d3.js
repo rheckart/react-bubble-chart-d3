@@ -95,7 +95,7 @@ export default class BubbleChart extends Component {
 
     const bubbleChart = d3.select(this.svg).append("g")
       .attr("class", "bubble-chart")
-      .attr("transform", function(d) { return "translate(" + (width * graph.offsetX) + "," + (width * graph.offsetY) + ")"; });;
+      .attr("transform", function(d) { return "translate(" + (width * graph.offsetX) + "," + (height * graph.offsetY) + ")"; });;
 
     const node = bubbleChart.selectAll(".node")
     .data(nodes)
