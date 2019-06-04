@@ -59,7 +59,7 @@ export default class BubbleChart extends Component {
     const color = d3.scaleOrdinal(d3.schemeCategory20c);
 
     const pack = d3.pack()
-        .size([bubblesWidth * graph.zoom, bubblesWidth * graph.zoom])
+        .size([bubblesWidth * graph.zoom, height])
         .padding(padding);
 
     // Process the data to have a hierarchy structure;
